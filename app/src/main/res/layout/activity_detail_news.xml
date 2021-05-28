@@ -34,32 +34,6 @@
                 android:transitionName="img"
                 tools:ignore="UnusedAttribute" />
 
-            <RelativeLayout
-                android:id="@+id/headerContent"
-                app:layout_collapseMode="pin"
-                android:fitsSystemWindows="true"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:src="@drawable/top_shadow"
-                    android:scaleType="centerCrop"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp" />
-
-                <ImageView
-                    android:layout_alignParentBottom="true"
-                    android:src="@drawable/bottom_shadow"
-                    android:id="@+id/img2"
-                    android:layout_alignBottom="@id/img2"
-                    android:scaleType="centerCrop"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp" />
-
-            </RelativeLayout>
-
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -133,6 +107,31 @@
                         android:textStyle="bold"
                         android:layout_margin="5dp">
                     </TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/headerContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical"
+                        app:layout_collapseMode="pin">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/top_shadow" />
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_alignBottom="@id/img2"
+                            android:layout_alignParentBottom="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bottom_shadow" />
+
+                    </RelativeLayout>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
