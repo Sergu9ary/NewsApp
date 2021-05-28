@@ -26,8 +26,8 @@ import android.widget.Toast;
 
 import com.example.newsapp.api.ApiClient;
 import com.example.newsapp.api.ApiInterface;
-import com.example.newsapp.models.Article;
-import com.example.newsapp.models.News;
+import com.example.newsapp.data.Article;
+import com.example.newsapp.data.News;
 
 import java.util.ArrayList;
 import java.util.List;
